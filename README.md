@@ -29,7 +29,7 @@ cd to main folder.(if not already inside it)
 "PostgreSQL must be running locally". Create a database (e.g., taskdb).
 
 3. Configure Environment
-Review the code , and add the postgres values accordingly.
+Review the code(i have provided all the required comments in the code for better understanding) , and add the postgres values accordingly.
 
 Open the .env file and app.module.ts and add the postgres values accordingly.(Take reference with my values[i have provided both .env file and hard coded values])
 4. Install Dependencies and Run -
@@ -51,7 +51,9 @@ npm run dev
 ✅ Frontend should now be running at http://localhost:5173
  
 
-{if you see a not found error in backend or frontend after doing everything right , just install the dependency which is mentioned in the not found error and you will be good to go} 
+{if you see a not found error in backend or frontend after doing everything right , just install the dependency which is mentioned in the not found error and you will be good to go}
+
+
 Approach -->>
 Modular Architecture: Backend employs NestJS modules for auth, user, and tasks for concern separation.
 
