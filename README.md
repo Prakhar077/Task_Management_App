@@ -23,22 +23,15 @@ Backend (NestJS + PostgreSQL)
 #### 1. Download the Zip Folder of code and extract it .
 
 Open the app with vs code .
-cd task-management-app
+cd to main folder.(if not already inside it)
 
 2. Setup PostgreSQL
-PostgreSQL must be running locally. Create a database (e.g., taskdb).
+"PostgreSQL must be running locally". Create a database (e.g., taskdb).
 
 3. Configure Environment
-Create a .env file in the /backend directory:
+Review the code , and add the postgres values accordingly.
 
-
-DATABASE_HOST=localhost
-DATABASE_PORT=5432
-DATABASE_USER=your_db_user
-DATABASE_PASSWORD=your_db_password
-DATABASE_NAME=taskdb
-JWT_SECRET=your_jwt_secret
-JWT_EXPIRES_IN=1d
+Open the .env file and app.module.ts and add the postgres values accordingly.(Take reference with my values[i have provided both .env file and hard coded values])
 4. Install Dependencies and Run -
 
 cd backend
@@ -46,17 +39,19 @@ npm install
 npm run start:dev
 ✅ Backend should be running at http://localhost:3000
 
-???? Frontend (React + Vite)
+####**** Frontend (React + Vite)
 1. Configure Environment
 
 VITE_API_URL=http://localhost:3000
 2. Install Dependencies and Run
 
-cd frontend
+cd task-manager-frontend
 npm install
 npm run dev
 ✅ Frontend should now be running at http://localhost:5173
  
+
+{if you see a not found error in backend or frontend after doing everything right , just install the dependency which is mentioned in the not found error and you will be good to go} 
 Approach -->>
 Modular Architecture: Backend employs NestJS modules for auth, user, and tasks for concern separation.
 
@@ -69,6 +64,8 @@ Form Handling: React Hook Form + Yup offer clean validation on the frontend.
 Data Management: React Query for fetching/mutating operations with auto caching and re-fetching.
 
 User Experience: Tailwind CSS for quick styling, status/priority filtering, and responsive UI design.
+
+[Note - The Frontend is not that enticing and visually appealing , as my approach was, a quality backend , if required i can make the frontend much better as compared to the existing one. Please let me know if you require it .]
 
 ???? Admin Credentials 
 --
@@ -85,6 +82,6 @@ Password - admin123.
 Login and you can use the app .
 
 
-Email: prakharsharma522@gmail.com
-Password: admin123
-Role: Admin
+You can create users in user page and add task in tasks page , you can navigate through top nav bar .
+
+

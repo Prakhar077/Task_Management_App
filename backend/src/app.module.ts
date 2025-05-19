@@ -13,7 +13,7 @@ import { Task } from './tasks/task.entity';
       host: 'localhost',
       port: 5432,
       username: 'postgres',
-      password: 'Prakhar',
+      password: 'Password',
       database: 'Db_Tasks',
       entities: [User, Task],
       synchronize: true,
